@@ -1,0 +1,104 @@
+/* Importing the Digital-7 font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Digital-7&display=swap');
+
+/* Basic styling for the scoreboard */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #bde0fe;
+    margin: 0;
+}
+
+.teams {
+    border: 5px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffb3c6;
+}
+
+.scoreboard {
+    background-color: #ffc8dd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.team {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.score, .time-display {
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 3em; /* Increased font size for a larger display */
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Digital-7', sans-serif; /* Applying the digital clock font */
+}
+.time-display {
+    color: #d90429;
+    
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#teamA button {
+    background-color: #007BFF;
+}
+
+#teamB button {
+    background-color: #FF5733;
+}
+
+/* Timer section styling */
+.timer {
+    border: 5px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #ffb3c6;
+}
+
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.rsb {
+    background-color: #ff0000;
+}

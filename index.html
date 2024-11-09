@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard with Timer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Scoreboard</h1>
+        
+        <div class="teams">
+            <div class="team" id="teamA">
+                <h2>Team A</h2>
+                <div class="score" id="scoreA">0</div>
+                <button onclick="incrementScore('A')">Increase Team A</button>
+                <button onclick="decrementScore('A')">Decrease Team A</button>
+            </div>
+
+            <!-- Team B Section -->
+            <div class="team" id="teamB">
+                <h2>Team B</h2>
+                <div class="score" id="scoreB">0</div>
+                <button onclick="incrementScore('B')">Increase Team B</button>
+                <button onclick="decrementScore('B')">Decrease Team B</button>
+            </div>
+        </div>
+        <!-- Reset Scores and Timer -->
+        <button class="rsb" onclick="resetScores()">Reset Scores</button>
+
+            <!-- Timer Section -->
+        <div class="timer">
+            <h2>Timer</h2>
+            <div class="time-display" id="timerDisplay">00:00</div>
+            <button onclick="startTimer()">Start Timer</button>
+            <button onclick="stopTimer()">Stop Timer</button>
+            <button class="rsb" onclick="resetTimer()">Reset Timer</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
